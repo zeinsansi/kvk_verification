@@ -1,0 +1,10 @@
+version: '1'
+
+services:
+  kvk_verification_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kvk_verification
+    ports:
+      - "8002:8002"
